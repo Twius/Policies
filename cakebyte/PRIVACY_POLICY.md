@@ -7,12 +7,12 @@ permalink: /cakebyte/
 # Privacy Policy for Cakebyte
 
 **Effective date:** 2026-06-09
-**Last updated:** 2026-06-09
+**Last updated:** 2026-06-22
 **App:** cakebyte
 
 This Privacy Policy explains how the Cakebyte Android application ("Cakebyte", "the app", "we") handles your information. Cakebyte is a **firewall** app for Android: it lets you allow or block individual apps' network access, block IP addresses and ranges, and review connection activity — all on your device.
 
-> **Summary:** Cakebyte has no servers and no user accounts. It collects, transmits, and shares no personal data — everything it generates stays on your device. Cakebyte uses Android's local VPN API only to filter traffic on-device; no traffic is ever routed to an external server.
+> **Summary:** Cakebyte has no servers and no user accounts. It collects, transmits, and shares no personal data — everything it generates stays on your device. Cakebyte uses Android's local VPN API only to filter traffic on-device; no traffic is ever routed to an external server. The one exception is your **optional one-time purchase**, which — like every paid app on the Play Store — is processed by Google Play solely to unlock the Pro features. It carries none of your firewall activity and does not track you.
 
 ---
 
@@ -21,7 +21,7 @@ This Privacy Policy explains how the Cakebyte Android application ("Cakebyte", "
 Cakebyte is developed by **Twius**.
 Contact: **twius.09@gmail.com**.
 
-We do not operate any backend server, database, or cloud service for Cakebyte. We never receive, store, or have access to your data.
+We do not operate any backend server, database, or cloud service for Cakebyte. We never receive, store, or have access to your data. If you buy the Pro upgrade, the payment is handled entirely by Google Play — we never see or store your payment details.
 
 ---
 
@@ -41,7 +41,9 @@ This data is **not** transmitted to us or to any third party. There are no serve
 
 ## 3. Information shared with third parties
 
-Cakebyte does **not** share any information with third parties. It contacts no external server at runtime — there is no cloud sync, no analytics, and no advertising.
+Cakebyte does **not** share any information with third parties for analytics, advertising, or profiling. Apart from completing a purchase you choose to make (see **Purchases** below), it contacts no external server at runtime — there is no cloud sync, no analytics, and no advertising.
+
+**Purchases (Google Play Billing).** Cakebyte's core firewall is free. The Pro features are unlocked by a single, optional one-time purchase after a free 14-day trial (no subscription). If you choose to buy, the purchase is processed by **Google Play Billing** — Google's standard payment system used by all paid apps on the Play Store. Google handles the transaction and records your entitlement so it can be restored on your devices; we never receive or store your payment details. The app contacts Google Play only to complete or restore a purchase — never to transmit your firewall rules, connection logs, or any other activity. Your trial status is tracked locally on your device. How Google processes payments is governed by Google's own privacy policy.
 
 Cakebyte bundles a static copy of the [StevenBlack/hosts](https://github.com/StevenBlack/hosts) unified hosts blocklist (MIT License) to identify known tracking domains. This list is included in the app at build time and is never fetched at runtime; no data is sent to or received from any external server as a result of it.
 
@@ -58,6 +60,7 @@ Cakebyte bundles a static copy of the [StevenBlack/hosts](https://github.com/Ste
 | `POST_NOTIFICATIONS` | To show firewall status and blocked connection alerts |
 | `ACCESS_NETWORK_STATE` | To detect when you switch between WiFi and mobile data |
 | `WAKE_LOCK` | To keep packet forwarding responsive while the screen is off so background streaming does not stall, when "Keep awake for streaming" is enabled |
+| `com.android.vending.BILLING` | To process the optional one-time in-app purchase that unlocks Pro features, through Google Play |
 
 **VPN usage:** Cakebyte uses Android's `VpnService` API to create a local VPN tunnel. All traffic interception happens entirely on your device. Cakebyte is not a VPN service — no traffic is routed to any external server.
 
@@ -65,7 +68,7 @@ Cakebyte bundles a static copy of the [StevenBlack/hosts](https://github.com/Ste
 
 ## 5. Analytics, advertising, and tracking
 
-Cakebyte contains **no analytics SDKs, no advertising, and no third-party tracking**, and uses no crash-reporting tools. We do not profile you, and we do not sell or share personal data.
+Cakebyte contains **no analytics SDKs, no advertising, and no third-party tracking**, and uses no crash-reporting tools. We do not profile you, and we do not sell or share personal data. The only third-party component in the app is Google Play Billing, used solely to process the optional purchase described above; it performs no advertising or behavioural tracking within Cakebyte.
 
 ---
 
@@ -88,9 +91,11 @@ Your data is stored in the app's private, sandboxed storage provided by Android.
 
 ---
 
-## 9. Ownership
+## 9. Ownership and purchases
 
-When you purchase Cakebyte, you receive full ownership of your digital copy. There are no subscriptions, no license fees, and no features locked behind future payments. Your purchase grants you permanent use of the version you bought. We will never remotely disable, restrict, or revoke your copy.
+Cakebyte's core firewall is free to use. The Pro features (such as detailed connection logs, per-app activity statistics, and alerts) are unlocked by a single **one-time purchase** after a free 14-day trial. There are **no subscriptions, no recurring fees, and no ads.**
+
+Your purchase is permanent. It is tied to your Google account and can be restored on any device where you are signed in. We will never remotely disable, restrict, or revoke features you have unlocked, and we will never sell or share your data.
 
 ---
 

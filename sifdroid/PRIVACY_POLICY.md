@@ -7,12 +7,12 @@ permalink: /sifdroid/
 # Privacy Policy for Sifdroid
 
 **Effective date:** 2026-06-04
-**Last updated:** 2026-06-18
+**Last updated:** 2026-06-23
 **App:** sifdroid
 
 This Privacy Policy explains how the Sifdroid Android application ("Sifdroid", "the app", "we") handles your information. Sifdroid is a personal-finance **documentation** app: it records income, expenses, savings goals, investment holdings, and assets that you enter yourself. It does not execute trades or payments.
 
-> **Summary:** Sifdroid has no servers and no user accounts. All of your financial data stays on your device. The only information that ever leaves your device is the stock/crypto symbols and currency codes needed to look up live prices from third-party market-data providers — never your balances, amounts, holdings, notes, or goals.
+> **Summary:** Sifdroid has no servers and no user accounts. All of your financial data stays on your device. The only information that leaves your device is (a) the stock/crypto symbols and currency codes needed to look up live prices from third-party market-data providers, and (b) if you buy the optional one-time unlock, the purchase handled by Google Play — never your balances, amounts, holdings, notes, or goals.
 
 ---
 
@@ -33,7 +33,7 @@ All data you enter is stored **locally** on your device in a private SQLite data
 - Savings goals, contributions, and any goal photos you select
 - Investment portfolio and watchlist entries (symbols, quantities, prices, and each holding's currency you enter)
 - Assets (name, description, category, the value you enter, and any asset photo you select)
-- App settings, including your base currency, dashboard preferences (section order and which sections are shown/hidden), and any API keys you provide
+- App settings, including your base currency, dashboard preferences (section order and which sections are shown/hidden), any API keys you provide, and whether the one-time unlock has been purchased
 - Notification preferences
 
 This data is **not** transmitted to us or to any third party for storage. Android backup is disabled for the app (`allowBackup="false"`), so this data is not copied into cloud backups by the operating system.
@@ -60,11 +60,15 @@ These requests are only made when you have added investments/watchlist items or 
 
 API keys you enter are stored locally on your device and are sent only to their respective provider to authenticate your own requests.
 
+### In-app purchase (Google Play)
+
+Sifdroid is free to install. Some features (investments, assets, additional savings goals, and recurring transactions) are unlocked by a single optional **one-time purchase**, processed entirely by **Google Play** under [Google's privacy policy](https://policies.google.com/privacy). Sifdroid never sees or stores your payment details (card number, billing address, etc.); from Google Play it receives only whether the unlock has been purchased, so it can enable those features. This entitlement is the only purchase-related information stored on your device, and nothing about it is sent to us — we have no server to send it to.
+
 ---
 
 ## 4. Permissions and why they are used
 
-- **Internet** — to fetch live prices and exchange rates from the providers listed above. No other network communication occurs.
+- **Internet** — to fetch live prices and exchange rates from the providers listed above, and to let Google Play process the optional one-time unlock purchase. No other network communication occurs.
 - **Photos** — when you choose a photo for a savings goal or an asset, the app uses Android's **system photo picker**, which grants access to only the single image you pick. Sifdroid does **not** request broad storage or media permissions. The selected image is copied into the app's private storage and referenced locally; it is never uploaded.
 - **Biometric / device credential (USE_BIOMETRIC)** — optional app lock. Authentication is handled entirely by Android's `BiometricPrompt`, using your biometric **or**, as a fallback, your device PIN/pattern/password. Sifdroid never sees or stores your fingerprint, face, PIN, or passcode.
 - **Notifications (POST_NOTIFICATIONS)** — to show local reminders (earnings alerts, savings reminders, goal completion). All notifications are generated on-device; there is no push server.

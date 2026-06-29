@@ -7,7 +7,7 @@ permalink: /cakebyte/
 # Privacy Policy for Cakebyte
 
 **Effective date:** 2026-06-09
-**Last updated:** 2026-06-22
+**Last updated:** 2026-06-29
 **App:** cakebyte
 
 This Privacy Policy explains how the Cakebyte Android application ("Cakebyte", "the app", "we") handles your information. Cakebyte is a **firewall** app for Android: it lets you allow or block individual apps' network access, block IP addresses and ranges, and review connection activity — all on your device.
@@ -60,6 +60,7 @@ Cakebyte bundles a static copy of the [StevenBlack/hosts](https://github.com/Ste
 | `POST_NOTIFICATIONS` | To show firewall status and blocked connection alerts |
 | `ACCESS_NETWORK_STATE` | To detect when you switch between WiFi and mobile data |
 | `WAKE_LOCK` | To keep packet forwarding responsive while the screen is off so background streaming does not stall, when "Keep awake for streaming" is enabled |
+| `USE_BIOMETRIC` | To unlock the app with your fingerprint, face, or device PIN/pattern/password when the optional App Lock is enabled. Authentication is performed entirely by Android; Cakebyte never receives or stores your biometric data |
 | `com.android.vending.BILLING` | To process the optional one-time in-app purchase that unlocks Pro features, through Google Play |
 
 **VPN usage:** Cakebyte uses Android's `VpnService` API to create a local VPN tunnel. All traffic interception happens entirely on your device. Cakebyte is not a VPN service — no traffic is routed to any external server.
@@ -88,6 +89,8 @@ Cakebyte is not directed to children under 13 (or the minimum age required in yo
 ## 8. Security
 
 Your data is stored in the app's private, sandboxed storage provided by Android. As with any device-stored data, keeping your device secure (screen lock, OS updates) is the best protection.
+
+**App Lock (optional).** You can enable **App Lock** to require authentication — your fingerprint, face, or device PIN/pattern/password — every time you open Cakebyte, so no one with access to your unlocked device can change firewall rules, read your connection logs, or stop the firewall. It is off by default. Authentication is handled entirely by Android's biometric/device-credential system: **Cakebyte stores no credentials and never receives your biometric data.** While App Lock is enabled the app also hides its contents from the system app-switcher/recents preview.
 
 ---
 

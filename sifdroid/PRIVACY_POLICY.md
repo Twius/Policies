@@ -7,7 +7,7 @@ permalink: /sifdroid/
 # Privacy Policy for Sifdroid
 
 **Effective date:** 2026-06-04
-**Last updated:** 2026-06-23
+**Last updated:** 2026-06-29
 **App:** sifdroid
 
 This Privacy Policy explains how the Sifdroid Android application ("Sifdroid", "the app", "we") handles your information. Sifdroid is a personal-finance **documentation** app: it records income, expenses, savings goals, investment holdings, and assets that you enter yourself. It does not execute trades or payments.
@@ -98,7 +98,7 @@ Sifdroid is not directed to children under 13 (or the minimum age required in yo
 
 ## 8. Security
 
-Your data is stored in the app's private, sandboxed storage provided by Android. You may enable the optional app lock — unlocked with your biometric or your device PIN/pattern/password — for an additional layer of protection; it re-locks whenever the app is sent to the background or your screen turns off, and while the unlock prompt is showing the app's contents are obscured (blurred) so they are not visible behind it. As with any device-stored data, keeping your device secure (screen lock, OS updates) is the best protection.
+Your data is stored in the app's private, sandboxed storage provided by Android. You may enable the optional app lock — unlocked with your biometric or your device PIN/pattern/password — for an additional layer of protection; it re-locks whenever the app is sent to the background or your screen turns off, and while it is locked the app's contents are covered by a full-screen lock screen and kept out of the system's recent-apps preview, so they are not visible behind it. As with any device-stored data, keeping your device secure (screen lock, OS updates) is the best protection.
 
 ---
 

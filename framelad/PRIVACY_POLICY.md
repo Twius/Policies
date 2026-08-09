@@ -12,7 +12,7 @@ permalink: /framelad/
 
 This Privacy Policy explains how the framelad Android application ("framelad", "the app", "we") handles your information. framelad is a **tool for RNG (random number generation) manipulation**, built on the open-source mGBA emulation core. It runs ROM files you provide, entirely on your device, and adds features to predict and influence in-app RNG outcomes.
 
-> **Summary:** framelad has no servers and no user accounts. It collects, stores, transmits, and shares no personal data, and never connects to the internet. The only network feature is optional *local link play* — a direct device-to-device connection on your own local network that contacts no servers.
+> **Summary:** framelad has no servers and no user accounts. It collects, stores, transmits, and shares no personal data, and never connects to the internet. The only network feature is optional *local link play* — device-to-device connections on your own local network that contact no servers.
 
 ---
 
@@ -46,9 +46,9 @@ All of this stays on your device. None of it is sent to us or to any third party
 
 framelad shares **no** information with any third party. It never connects to the internet and contacts no external server.
 
-The app's only network feature is **local link play**: an optional, user-initiated mode in which two devices on the *same local network* connect **directly to each other** to synchronize a live session. When you use it:
+The app's only network feature is **local link play**: an optional, user-initiated mode in which up to four devices on the *same local network* connect **to each other** to synchronize a live session. When you use it:
 
-- Devices communicate peer-to-peer over your local network only. No server, relay, or internet service is involved, and no data leaves your network.
+- Devices communicate over your local network only. One device acts as the host and passes session traffic between the others; with more than two participants this means the host relays, but every device involved is one you connected yourself. No internet service is involved, no third party sits in the path, and no data leaves your network.
 - Sessions are advertised and discovered via Android's standard local network-service-discovery mechanism.
 - The data exchanged is limited to what the feature needs: a 4-character room code, your device's name (shown to the other players in the lobby), the loaded ROM's 4-character header code (to warn about mismatches), and the emulated link traffic itself.
 - Nothing from a link session is collected, logged, or transmitted anywhere else, and the connection ends when you disconnect or leave.

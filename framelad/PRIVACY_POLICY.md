@@ -7,7 +7,7 @@ permalink: /framelad/
 # Privacy Policy for framelad
 
 **Effective date:** 2026-06-18
-**Last updated:** 2026-06-18
+**Last updated:** 2026-08-11
 **App:** framelad
 
 This Privacy Policy explains how the framelad Android application ("framelad", "the app", "we") handles your information. framelad is a **tool for RNG (random number generation) manipulation**, built on the open-source mGBA emulation core. It runs ROM files you provide, entirely on your device, and adds features to predict and influence in-app RNG outcomes.
@@ -69,6 +69,7 @@ The following network-related permissions are declared **solely** for optional l
 | `ACCESS_WIFI_STATE` | Discovering and maintaining device-to-device sessions on your local network |
 | `CHANGE_WIFI_MULTICAST_STATE` | Local network-service discovery for link play |
 | `ACCESS_NETWORK_STATE` | Detecting local network availability for link play |
+| `WAKE_LOCK` | Keeping Wi-Fi responsive during a link session |
 
 ---
 

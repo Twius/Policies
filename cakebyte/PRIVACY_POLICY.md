@@ -1,113 +1,137 @@
 ---
 layout: default
-title: Privacy Policy — Cakebyte
+title: Privacy Policy for Cakebyte
 permalink: /cakebyte/
 ---
 
 # Privacy Policy for Cakebyte
 
-**Effective date:** 2026-06-09
-**Last updated:** 2026-06-29
+**Effective date:** 2026-08-29
+**Last updated:** 2026-08-29
 **App:** cakebyte
 
-This Privacy Policy explains how the Cakebyte Android application ("Cakebyte", "the app", "we") handles your information. Cakebyte is a **firewall** app for Android: it lets you allow or block individual apps' network access, block IP addresses and ranges, and review connection activity — all on your device.
+Cakebyte is a firewall app for Android. It lets you allow or block network access
+for individual apps, block IP addresses and ranges, and look at what your apps have
+been connecting to. This policy describes what it does with the information it handles.
 
-> **Summary:** Cakebyte has no servers and no user accounts. It collects, transmits, and shares no personal data — everything it generates stays on your device. Cakebyte uses Android's local VPN API only to filter traffic on-device; no traffic is ever routed to an external server. The one exception is your **optional one-time purchase**, which — like every paid app on the Play Store — is processed by Google Play solely to unlock the Pro features. It carries none of your firewall activity and does not track you.
-
----
+The short version: Cakebyte has no servers and no accounts. Nothing it records about
+you is sent anywhere. The only network request the app itself makes is to Google Play,
+and only when you buy or restore the Pro upgrade.
 
 ## 1. Who we are
 
-Cakebyte is developed by **Twius**.
-Contact: **twius.09@gmail.com**.
+Cakebyte is developed by Twius. You can reach us at twius.09@gmail.com.
 
-We do not operate any backend server, database, or cloud service for Cakebyte. We never receive, store, or have access to your data. If you buy the Pro upgrade, the payment is handled entirely by Google Play — we never see or store your payment details.
+There is no backend server or cloud service behind Cakebyte. We hold no copy of your
+data because we never receive one. If you buy the Pro upgrade, Google Play handles the
+payment and we never see your card details.
 
----
+## 2. What the app stores on your device
 
-## 2. Data stored on your device
+Cakebyte keeps its data in a private SQLite database inside the app's own sandboxed
+storage. That covers:
 
-All data the app generates is stored **locally** on your device in a private SQLite database and the app's private storage. This includes:
+- **Firewall rules**: which apps you have allowed or blocked on WiFi and mobile data
+- **IP blocklist**: the addresses and CIDR ranges you have blocked for all apps, each with an optional label (often the name of the app you blocked it from)
+- **Connection logs**: domains, IP addresses, ports and timestamps for the connections your apps make
+- **Firewall alerts**: events like a firewall crash, a conflict with another VPN app, or a revoked permission
+- **App settings**: your preferences, such as recovery behaviour, roaming behaviour and which notifications you want
 
-- **Firewall rules** — which apps are allowed or blocked on WiFi and mobile data
-- **IP blocklist** — IP addresses and CIDR ranges you have chosen to block for all apps, with an optional label (such as the name of the app you blocked the address from)
-- **Connection logs** — domains, IP addresses, ports, and timestamps of network connections made by apps on your device
-- **Firewall alerts** — system events such as firewall crashes, VPN conflicts, and permission revocations
-- **App settings** — your preferences such as firewall recovery, roaming behaviour, and notification settings
+None of it is transmitted to us or to anyone else. We create no backups and run no sync.
 
-This data is **not** transmitted to us or to any third party. There are no servers, no cloud sync, and no backups created by us.
+## 3. What leaves your device
 
----
+Nothing, apart from the purchase described in section 7.
 
-## 3. Information shared with third parties
+Cakebyte contains no analytics SDK and no advertising. Nothing reports crashes back to
+us either. It does not profile you, and there is no data for us to sell even if we
+wanted to. At runtime the app contacts no server of ours, because there isn't one.
 
-Cakebyte does **not** share any information with third parties for analytics, advertising, or profiling. Apart from completing a purchase you choose to make (see **Purchases** below), it contacts no external server at runtime — there is no cloud sync, no analytics, and no advertising.
+It does bundle a static copy of the [StevenBlack/hosts](https://github.com/StevenBlack/hosts)
+blocklist (MIT License) so it can recognise known tracking domains. That file ships
+inside the app and is read from local storage. Nothing is fetched at runtime, and no
+lookup you make is sent anywhere.
 
-**Purchases (Google Play Billing).** Cakebyte's core firewall is free. The Pro features are unlocked by a single, optional one-time purchase after a free 14-day trial (no subscription). If you choose to buy, the purchase is processed by **Google Play Billing** — Google's standard payment system used by all paid apps on the Play Store. Google handles the transaction and records your entitlement so it can be restored on your devices; we never receive or store your payment details. The app contacts Google Play only to complete or restore a purchase — never to transmit your firewall rules, connection logs, or any other activity. Your trial status is tracked locally on your device. How Google processes payments is governed by Google's own privacy policy.
+**VPN usage.** Cakebyte uses Android's `VpnService` API to open a local tunnel so it
+can inspect packets on the device. It is not a VPN service in the usual sense: your
+traffic is never relayed through a server we or anyone else operates.
 
-Cakebyte bundles a static copy of the [StevenBlack/hosts](https://github.com/StevenBlack/hosts) unified hosts blocklist (MIT License) to identify known tracking domains. This list is included in the app at build time and is never fetched at runtime; no data is sent to or received from any external server as a result of it.
-
----
-
-## 4. Permissions and why they are used
+## 4. Permissions
 
 | Permission | Why it is needed |
 |---|---|
 | `QUERY_ALL_PACKAGES` | To display the full list of installed apps so you can set firewall rules for each one |
 | `BIND_VPN_SERVICE` | To intercept network traffic locally on-device for firewall enforcement |
+| `INTERNET` | To forward the traffic your apps send, once the firewall has allowed it. Cakebyte itself sends no data anywhere |
 | `FOREGROUND_SERVICE` | To keep the firewall running while the app is in the background |
+| `FOREGROUND_SERVICE_CONNECTED_DEVICE` | The foreground-service type that Android 14 and later requires for a VPN service |
 | `RECEIVE_BOOT_COMPLETED` | To restart the firewall automatically after the device reboots, if enabled |
 | `POST_NOTIFICATIONS` | To show firewall status and blocked connection alerts |
 | `ACCESS_NETWORK_STATE` | To detect when you switch between WiFi and mobile data |
+| `CHANGE_NETWORK_STATE` | To bring the local VPN tunnel up and down as your device moves between networks |
 | `WAKE_LOCK` | To keep packet forwarding responsive while the screen is off so background streaming does not stall, when "Keep awake for streaming" is enabled |
 | `USE_BIOMETRIC` | To unlock the app with your fingerprint, face, or device PIN/pattern/password when the optional App Lock is enabled. Authentication is performed entirely by Android; Cakebyte never receives or stores your biometric data |
 | `com.android.vending.BILLING` | To process the optional one-time in-app purchase that unlocks Pro features, through Google Play |
 
-**VPN usage:** Cakebyte uses Android's `VpnService` API to create a local VPN tunnel. All traffic interception happens entirely on your device. Cakebyte is not a VPN service — no traffic is routed to any external server.
+## 5. Logging and deletion
 
----
+Connection logging is on by default. Turn off **Activity logging** in settings and the
+app stops recording connections altogether.
 
-## 5. Analytics, advertising, and tracking
+You can wipe the connection logs and the alert history from inside the app whenever you
+want. Logs belonging to a particular app are also dropped automatically if you uninstall
+or disable that app.
 
-Cakebyte contains **no analytics SDKs, no advertising, and no third-party tracking**, and uses no crash-reporting tools. We do not profile you, and we do not sell or share personal data. The only third-party component in the app is Google Play Billing, used solely to process the optional purchase described above; it performs no advertising or behavioural tracking within Cakebyte.
+One thing that wipe does not cover: Cakebyte keeps a small daily roll-up per app,
+holding nothing but connection and block counts. There are no domains, addresses or
+timestamps in it. It stays on your device like everything else, and uninstalling
+Cakebyte clears it along with the rest.
 
----
+## 6. App Lock and device security
 
-## 6. Data logging, deletion, and control
+Everything lives in the app's private storage, which Android keeps sandboxed from other
+apps. Beyond that the usual advice applies: a screen lock and current OS updates protect
+device-stored data better than anything an app can do for you.
 
-- **Activity logging:** Connection logging is on by default. When you turn off **Activity logging** in settings, connections are not recorded to your device at all.
-- **Deletion:** You can delete all connection logs and firewall alerts at any time from within the app. Connection logs for a specific app are also deleted automatically when that app is uninstalled or disabled on your device. Uninstalling Cakebyte removes all locally stored data.
+**App Lock** is an optional extra. Switch it on and Cakebyte asks for authentication
+when you open it, and again if it has sat in the background for more than about 30
+seconds, so someone holding your unlocked phone cannot change your firewall rules or
+read your connection logs. It ships off by default.
 
----
+Android handles the authentication itself, through its biometric and device-credential
+APIs. Cakebyte stores no credentials and never sees your fingerprint or face data. While
+App Lock is on, the app also hides its contents from the recents screen.
 
-## 7. Children's privacy
+## 7. Purchases
 
-Cakebyte is not directed to children under 13 (or the minimum age required in your jurisdiction). We do not knowingly collect personal information from children. Since no data is collected by us, no such data is processed on our side.
+The firewall itself is free. Pro adds the detailed connection log, per-app statistics
+and alerts, and you get a 14-day trial before deciding. Unlocking it is a single
+one-time purchase. There is no subscription and there are no ads.
 
----
+Google Play Billing processes the payment, the same system behind every paid app on the
+Play Store. Google runs the transaction and keeps a record of what you own so it can be
+restored on any device where you are signed in. We never receive or store your payment
+details, and Google's own privacy policy governs how it handles them. Your trial status
+is tracked locally and never uploaded.
 
-## 8. Security
+The app talks to Google Play for one reason: to complete or restore a purchase. Your
+firewall rules and connection logs are never part of that conversation.
 
-Your data is stored in the app's private, sandboxed storage provided by Android. As with any device-stored data, keeping your device secure (screen lock, OS updates) is the best protection.
+Your purchase is permanent. We will not remotely disable or restrict anything you have
+unlocked.
 
-**App Lock (optional).** You can enable **App Lock** to require authentication — your fingerprint, face, or device PIN/pattern/password — every time you open Cakebyte, so no one with access to your unlocked device can change firewall rules, read your connection logs, or stop the firewall. It is off by default. Authentication is handled entirely by Android's biometric/device-credential system: **Cakebyte stores no credentials and never receives your biometric data.** While App Lock is enabled the app also hides its contents from the system app-switcher/recents preview.
+## 8. Children
 
----
+Cakebyte is not aimed at children under 13, or under whatever minimum age applies where
+you live. We do not knowingly collect information from children. Since we collect
+nothing from anyone, there is nothing on our side to process.
 
-## 9. Ownership and purchases
+## 9. Changes to this policy
 
-Cakebyte's core firewall is free to use. The Pro features (such as detailed connection logs, per-app activity statistics, and alerts) are unlocked by a single **one-time purchase** after a free 14-day trial. There are **no subscriptions, no recurring fees, and no ads.**
+We may revise this policy occasionally. When something material changes, the
+"Last updated" date above changes with it, and where it matters we will say so in the
+app or on the store listing.
 
-Your purchase is permanent. It is tied to your Google account and can be restored on any device where you are signed in. We will never remotely disable, restrict, or revoke features you have unlocked, and we will never sell or share your data.
+## 10. Contact
 
----
-
-## 10. Changes to this policy
-
-We may update this Privacy Policy from time to time. Material changes will be reflected by updating the "Last updated" date above and, where appropriate, within the app or its store listing.
-
----
-
-## 11. Contact
-
-Questions about this Privacy Policy? Contact **twius.09@gmail.com**.
+Questions about any of this: twius.09@gmail.com

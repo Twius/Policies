@@ -6,8 +6,8 @@ permalink: /cakebyte/terms/
 
 # Terms of Use for Cakebyte
 
-**Effective date:** 2026-09-15
-**Last updated:** 2026-10-05
+**Effective date:** 2026-09-15<br>
+**Last updated:** 2026-10-05<br>
 **App:** cakebyte
 
 These Terms of Use ("Terms") cover your use of the Cakebyte Android app ("Cakebyte", "the app"). Cakebyte is a no-root firewall. It uses Android's `VpnService` API to open a local tunnel on your device, then allows or blocks the traffic your apps send based on rules you set.
@@ -18,7 +18,7 @@ By installing or using Cakebyte, you agree to these Terms. If you do not agree, 
 
 ## 1. Who we are
 
-Cakebyte is developed and published by **Twius**.
+Cakebyte is developed and published by **Twius**.<br>
 Contact: **twius.09@gmail.com**.
 
 The terms of the store you got the app from also apply, which for Cakebyte normally means Google Play. Where the store's terms and these Terms disagree about something the store handles, such as payment, refunds or distribution, the store's terms win.
@@ -87,7 +87,7 @@ If you rely on another VPN for privacy or for work access, remember that Cakebyt
 
 ## 8. Your data
 
-Your rules, blocklists, connection logs and alerts all stay on your device, in the app's private storage. We run no server and keep no copy. The [Privacy Policy](/Policies/cakebyte/) explains this in full.
+Your rules, blocklists, connection logs and alerts all stay on your device, in the app's private storage. We run no server and keep no copy. The [Privacy Policy]({{ '/cakebyte/' | relative_url }}) explains this in full.
 
 That has a consequence: **if you lose your device, reset it, or uninstall the app, your Cakebyte data is gone for good.** We cannot recover it, because we never had it.
 
@@ -143,7 +143,7 @@ We may update these Terms. The version published at this address is always the c
 
 ## 16. Privacy
 
-What the app does with information on your device is covered separately in the [Privacy Policy for Cakebyte](/Policies/cakebyte/).
+What the app does with information on your device is covered separately in the [Privacy Policy for Cakebyte]({{ '/cakebyte/' | relative_url }}).
 
 ## 17. Contact
 

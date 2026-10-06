@@ -6,8 +6,8 @@ permalink: /sifdroid/terms/
 
 # Terms of Use for Sifdroid
 
-**Effective date:** 2026-09-15
-**Last updated:** 2026-09-24
+**Effective date:** 2026-09-15<br>
+**Last updated:** 2026-09-24<br>
 **App:** sifdroid
 
 These Terms of Use ("Terms") cover your use of the Sifdroid Android app ("Sifdroid", "the app"). Sifdroid keeps a record of the accounts, income, expenses, transfers, investment holdings and assets that you enter yourself, and it stores them on your device.
@@ -18,7 +18,7 @@ By installing or using Sifdroid, you agree to these Terms. If you do not agree, 
 
 ## 1. Who these Terms are with
 
-Sifdroid is developed and published by Twius.
+Sifdroid is developed and published by Twius.<br>
 Contact: **twius.09@gmail.com**.
 
 Your use of the app is also covered by the terms of the store you got it from, which is normally Google Play. Where those store terms and these Terms disagree about something the store handles, such as payment, refunds or distribution, the store terms win.
@@ -72,7 +72,7 @@ Any of these providers may change, restrict or shut down its service at any time
 
 ## 6. Your data, and your backups
 
-Everything you enter stays on your device, in the app's private storage. We run no server and hold no copy of it. The [Privacy Policy](/Policies/sifdroid/) explains this in full.
+Everything you enter stays on your device, in the app's private storage. We run no server and hold no copy of it. The [Privacy Policy]({{ '/sifdroid/' | relative_url }}) explains this in full.
 
 That has a few consequences:
 
@@ -131,7 +131,7 @@ We may update these Terms. The current version is always the one published at th
 
 ## 14. Privacy
 
-What the app does with information on your device is covered separately in the [Privacy Policy for Sifdroid](/Policies/sifdroid/).
+What the app does with information on your device is covered separately in the [Privacy Policy for Sifdroid]({{ '/sifdroid/' | relative_url }}).
 
 ## 15. Contact
 

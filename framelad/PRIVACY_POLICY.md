@@ -6,8 +6,8 @@ permalink: /framelad/
 
 # Privacy Policy for framelad
 
-**Effective date:** 2026-06-18
-**Last updated:** 2026-09-16
+**Effective date:** 2026-06-18<br>
+**Last updated:** 2026-09-16<br>
 **App:** framelad
 
 This Privacy Policy explains how the framelad Android application ("framelad", "the app", "we") handles your information. framelad is a **tool for RNG (random number generation) manipulation**, built on the open-source mGBA emulation core. It runs ROM files you provide, entirely on your device, and adds features to predict and influence in-app RNG outcomes.
@@ -16,7 +16,7 @@ This Privacy Policy explains how the framelad Android application ("framelad", "
 
 ## 1. Who we are
 
-framelad is developed by **Twius**.
+framelad is developed by **Twius**.<br>
 Contact: **twius.09@gmail.com**.
 
 We do not operate any backend server, database, or cloud service for framelad. We never receive, store, or have access to your data.
@@ -105,7 +105,7 @@ We may update this Privacy Policy from time to time. This page is the canonical 
 
 ## 11. Related documents
 
-Your use of the app is also covered by the [Terms of Use](/Policies/framelad/terms/).
+Your use of the app is also covered by the [Terms of Use]({{ '/framelad/terms/' | relative_url }}).
 
 ## 12. Contact
 

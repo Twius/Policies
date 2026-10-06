@@ -6,8 +6,8 @@ permalink: /framelad/terms/
 
 # Terms of Use for framelad
 
-**Effective date:** 2026-09-15
-**Last updated:** 2026-09-16
+**Effective date:** 2026-09-15<br>
+**Last updated:** 2026-09-16<br>
 **App:** framelad
 
 These Terms of Use ("Terms") govern your use of the framelad Android application ("framelad", "the app", "we"). framelad is a tool for RNG (random number generation) manipulation, built on the open-source mGBA emulation core. It runs ROM files that you provide, entirely on your device.
@@ -18,7 +18,7 @@ By installing or using framelad, you agree to these Terms. If you do not agree, 
 
 ## 1. Who these Terms are with
 
-framelad is developed and published by **Twius**.
+framelad is developed and published by **Twius**.<br>
 Contact: **twius.09@gmail.com**.
 
 Your use of the app is also subject to the terms of the store you obtained it from. Where those store terms and these Terms differ on a point the store governs, the store terms apply.
@@ -105,7 +105,7 @@ We may update these Terms. The current version is always the one published at th
 
 ## 13. Privacy
 
-framelad collects no personal data. How the app handles information on your device is described separately in the [Privacy Policy](/Policies/framelad/).
+framelad collects no personal data. How the app handles information on your device is described separately in the [Privacy Policy]({{ '/framelad/' | relative_url }}).
 
 ## 14. Contact
 

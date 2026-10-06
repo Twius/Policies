@@ -6,8 +6,8 @@ permalink: /cakebyte/
 
 # Privacy Policy for Cakebyte
 
-**Effective date:** 2026-08-29
-**Last updated:** 2026-10-05
+**Effective date:** 2026-08-29<br>
+**Last updated:** 2026-10-05<br>
 **App:** cakebyte
 
 Cakebyte is a firewall app for Android. It lets you allow or block network access
@@ -154,7 +154,7 @@ firewall rules and connection logs are never part of that conversation.
 
 Once you have bought Pro, it stays bought. We will not switch it off remotely, and we
 will not ask you to pay again for something you already own. The app itself will carry
-on changing, and the [Terms of Use](/Policies/cakebyte/terms/) explain how.
+on changing, and the [Terms of Use]({{ '/cakebyte/terms/' | relative_url }}) explain how.
 
 ## 9. Children
 
@@ -170,7 +170,7 @@ app or on the store listing.
 
 ## 11. Related documents
 
-Your use of the app is also covered by the [Terms of Use](/Policies/cakebyte/terms/).
+Your use of the app is also covered by the [Terms of Use]({{ '/cakebyte/terms/' | relative_url }}).
 
 ## 12. Contact
 

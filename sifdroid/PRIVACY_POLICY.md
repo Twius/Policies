@@ -6,8 +6,8 @@ permalink: /sifdroid/
 
 # Privacy Policy for Sifdroid
 
-**Effective date:** 2026-06-04
-**Last updated:** 2026-09-24
+**Effective date:** 2026-06-04<br>
+**Last updated:** 2026-09-24<br>
 **App:** sifdroid
 
 This Privacy Policy explains how the Sifdroid Android app handles your information. Sifdroid is a personal-finance documentation app: it records the accounts, income, expenses, transfers, investment holdings, and assets that you enter yourself. It does not execute trades or payments.
@@ -16,7 +16,7 @@ This Privacy Policy explains how the Sifdroid Android app handles your informati
 
 ## 1. Who we are
 
-Sifdroid is developed by Twius.
+Sifdroid is developed by Twius.<br>
 Contact: **twius.09@gmail.com**.
 
 We do not operate any backend server, database, or cloud service for Sifdroid. We never receive or store your data, and we have no way to access it.
@@ -51,9 +51,9 @@ When a stock or coin logo is shown, the app also downloads that image directly f
 
 Price lookups are made only when you have added investments or watchlist items, or use a feature that needs them. The latest exchange-rate table is downloaded about once a day when you open the app, even if you only use one currency. Past rates are downloaded only when your records use a currency other than your base currency. Each provider processes the request under its own privacy policy:
 
-- Finnhub: https://finnhub.io/privacy-policy
-- CoinGecko: https://www.coingecko.com/en/privacy
-- Frankfurter: https://frankfurter.dev/
+- Finnhub: <https://finnhub.io/privacy-policy>
+- CoinGecko: <https://www.coingecko.com/en/privacy>
+- Frankfurter: <https://frankfurter.dev/>
 
 API keys you enter are stored locally on your device and are sent only to the provider they belong to, to authenticate your own requests.
 
@@ -109,7 +109,7 @@ Your data lives in the app's private, sandboxed storage, provided by Android. Yo
 
 ## 10. Related documents
 
-This policy covers what happens to your information. The [Terms of Use](/Policies/sifdroid/terms/) cover the rest: what the app does, what it does not promise, and the Sifdroid Pro purchase.
+This policy covers what happens to your information. The [Terms of Use]({{ '/sifdroid/terms/' | relative_url }}) cover the rest: what the app does, what it does not promise, and the Sifdroid Pro purchase.
 
 ## 11. Changes to this policy
 

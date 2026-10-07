@@ -1,2 +1,2 @@
 # Policies
-Official privacy policy documents for all applications developed and maintained by this account.
+Privacy policies and terms of use for the apps developed and maintained by Twius, published with GitHub Pages and the Just the Docs theme.

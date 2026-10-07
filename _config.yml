@@ -1,3 +1,23 @@
-title: Twius App Privacy Policies
-description: Official privacy policy documents for all applications developed and maintained by Twius.
-theme: jekyll-theme-cayman
+title: Twius App Policies
+description: Privacy policies and terms of use for apps by Twius.
+url: "https://twius.github.io"
+baseurl: "/Policies"
+
+# Just the Docs, pinned so a theme release can never change the published pages unannounced.
+remote_theme: just-the-docs/just-the-docs@v0.12.0
+plugins:
+  - jekyll-remote-theme
+
+search_enabled: false
+heading_anchors: true
+back_to_top: true
+back_to_top_text: "Back to top"
+
+callouts:
+  summary:
+    color: blue
+
+footer_content: 'Questions about these documents: <a href="mailto:twius.09@gmail.com">twius.09@gmail.com</a>'
+
+exclude:
+  - README.md

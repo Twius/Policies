@@ -8,7 +8,7 @@ nav_order: 2
 # Privacy Policy for Cakebyte
 
 **First published:** 2026-08-29<br>
-**Last updated:** 2026-10-07
+**Last updated:** 2026-10-11
 
 Cakebyte is a firewall app for Android. It lets you allow or block network access for individual apps, block IP addresses and ranges, and look at what your apps have been connecting to. This Privacy Policy explains how it handles your information. "We" and "us" mean Twius, the developer of Cakebyte.
 
@@ -89,7 +89,7 @@ The firewall itself is free and stays free. Cakebyte Pro adds the detailed conne
 
 Google Play Billing processes the payment. Google runs the transaction and keeps a record of what you own, so it can be restored on any device where you are signed in. We never see your card details, and [Google's privacy policy](https://policies.google.com/privacy) governs how Google handles them.
 
-Each time the app starts, including when Android starts it in the background, it asks Google Play whether you own Cakebyte Pro and what it costs, and it completes or restores a purchase when you ask. From Google Play the app receives the product's details, such as its price, and whether you own it. The app sends nothing about the purchase to us. Google's sales record is described in [section 2](#what-we-receive). Your trial status is kept on your device and never uploaded. Your firewall rules and connection logs are never part of that exchange.
+Each time you open the app, it asks Google Play whether you own Cakebyte Pro and what it costs, and it completes or restores a purchase when you ask. When Android starts the app in the background, for example after a reboot or from the Quick Settings tile, it does not contact Google Play. From Google Play the app receives the product's details, such as its price, and whether you own it. The app sends nothing about the purchase to us. Google's sales record is described in [section 2](#what-we-receive). Your trial status is kept on your device and never uploaded. Your firewall rules and connection logs are never part of that exchange.
 
 The [Terms of Use]({{ '/cakebyte/terms/' | relative_url }}) cover what the purchase includes and how refunds work.
 

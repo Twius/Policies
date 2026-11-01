@@ -8,7 +8,7 @@ nav_order: 6
 # Privacy Policy for Sifdroid
 
 **First published:** 2026-06-04<br>
-**Last updated:** 2026-10-07
+**Last updated:** 2026-11-01
 
 Sifdroid is a personal-finance documentation app: it records the accounts, income, expenses, transfers, investment holdings, and assets that you enter yourself. It does not execute trades or payments. This Privacy Policy explains how it handles your information. "We" and "us" mean Twius, the developer of Sifdroid.
 
@@ -41,7 +41,7 @@ Everything Sifdroid stores is kept on your device. It is kept in a private SQLit
 - Your record of investment buys and sells, including quantity, price, and date
 - Assets: name, description, category, currency, and the value you enter, plus the asset categories you create
 - Totals the app has worked out from these records, and upcoming earnings dates for your reminders
-- App settings, including your base currency, dashboard preferences (section order and which sections are shown or hidden), any API keys you provide, and whether Sifdroid Pro has been purchased
+- App settings, including your base currency, dashboard preferences (section order, card sizes, and which sections are shown or hidden), any API keys you provide, and whether Sifdroid Pro has been purchased
 - Notification preferences
 
 The app also keeps copies of public data it downloads, such as exchange-rate tables and company logos, so that screens still work offline.

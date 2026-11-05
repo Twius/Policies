@@ -8,7 +8,7 @@ nav_order: 2
 # Privacy Policy for Cakebyte
 
 **First published:** 2026-08-29<br>
-**Last updated:** 2026-10-11
+**Last updated:** 2026-11-05
 
 Cakebyte is a firewall app for Android. It lets you allow or block network access for individual apps, block IP addresses and ranges, and look at what your apps have been connecting to. This Privacy Policy explains how it handles your information. "We" and "us" mean Twius, the developer of Cakebyte.
 
@@ -39,7 +39,7 @@ Everything Cakebyte stores is kept on your device. It is kept in a private SQLit
 - **IP blocklist:** the addresses and CIDR ranges you have blocked for all apps, each with an optional label (often the name of the app you blocked it from)
 - **Connection logs:** domains, IP addresses, ports, and timestamps for the connections your apps make
 - **Usage counts:** hourly and daily totals of each app's connections and blocked connections (see [section 8](#deletion))
-- **Firewall alerts:** events like a firewall crash, a conflict with another VPN app, or a revoked permission
+- **Firewall alerts:** events like a firewall crash, an automatic restart, a conflict with another VPN app, or a revoked permission
 - **Pro status:** when your trial started and whether you own Cakebyte Pro
 - **App settings:** your preferences, such as recovery behaviour, roaming behaviour, **Activity logging**, **Keep history for**, **Keep awake for streaming**, and App Lock
 - **Tracker list:** the copy you downloaded, if you have updated the tracker list (see [section 4](#what-leaves))
